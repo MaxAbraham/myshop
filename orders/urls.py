@@ -1,7 +1,8 @@
 from django.conf.urls import url, include
 from django.contrib import admin
-from landing import views
+from . import views
 
 urlpatterns = [
-    #url(r'^', views.landing, name = 'landing'),
+    url(r'^basket_adding/$', views.basket_adding, name='basket_adding'),
+    url(r'^checkout/$', views.checkout, name='checkout'),
 ]
